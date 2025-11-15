@@ -18,12 +18,26 @@ local function print_colored(t, c)
 end
 
 local ascii = [[
-____ ____ .__ .__ __ ____ ___
-\ \ / /____ | | ____ ____ |__|/ |_ ___.__. \ \/ /
- \ Y // __ \| | / _ \_/ ___\| \ __< | | \ /
-  \ /\ ___/| |_( <_> ) \___| || | \___ | / \
-   \___/ \___ >____/\____/ \___ >__||__| / ____| /___/\ \
-             \/ \/ \/ \_/
+                                   
+                                   
+            @@@@@@@@@              
+         @@@@@@@@@@@@@@@@          
+      @@@@@@@@           @@@       
+     @@@@@@@                @      
+    @@@@@@@                        
+    @@@@@@           @@@@@@        
+    @@@@@@@             @@@@@@     
+    @@@@@@@@@@            @@@@@    
+     @@@@@@@@@@@@@@@       @@@@    
+        @@@@@@@@@@@@@@     @@@@    
+                 @@@@@    @@@@@    
+     @            @@@@    @@@@     
+      *@@%      @@@@@    @@@       
+         @@@@@@@@@@@   @@@         
+                    @@@            
+              
+        -- Made by Velocity.
+                                   
 ]]
 
 local function getGlobal(p)
@@ -1675,4 +1689,5 @@ LocalPlayer.CharacterAdded:Connect(function(newChar)
     character = newChar
     rootPart = newChar:WaitForChild("HumanoidRootPart")
     humanoid = newChar:WaitForChild("Humanoid")
+
 end)
